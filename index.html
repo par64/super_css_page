@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_pages</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Блок `header`-->
+    <header class="header">
+      <!-- Основное тело хедера -->
+      <div class="header__body">
+        <!-- Логотип хедера -->
+        <div class="header__logo">
+          <img src="img/par64.png" alt="par64" />
+        </div>
+        <h1 class="header__title">Домашняя работа 1.7</h1>
+        <nav class="header__nav">
+          <!-- Независимый блок `списка меню`, можно использовать вне header-->
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
+            <li class="nav__item">
+              <a href="#implementer" class="nav__link">Выполнил</a>
+            </li>
+            <li class="nav__item">
+              <a href="#topic" class="nav__link">Тема урока</a>
+            </li>
+            <li class="nav__item">
+              <a href="#task" class="nav__link">Решение</a>
+            </li>
+            <li class="nav__item">
+              <a href="#examples" class="nav__link">Примеры</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Дополнительный блок хедара, для примера
+      <div class="header__search">
+        <form class="search-form search-form--focused">
+          <input class="search-form__input" />
+          <button class="search-form__button">Найти</button>
+        </form>
+      </div> -->
+    </header>
+    <!-- Блок основного контента -->
+    <main class="content">
+      <!-- Костыль, чтоб продемонстрировать грид -->
+      <div class="sidebar"></div>
+      <!-- Элемент блока основного контента - блок "задание" -->
+      <section class="content__task">
+        <div class="content__item">
+          <h2 class="content__item-title" id="implementer">Выполнил</h2>
+          <p class="content__item-text">
+            Участник программы профессиональной переподготовки по профессии
+            "web-разработчик" - <br />
+            Королев Дмитрий
+          </p>
+        </div>
+        <div class="content__item">
+          <h2 class="content__item-title" id="topic">Тема урока</h2>
+          <p class="content__item-text">Продвинутый CSS</p>
+        </div>
+        <div class="content__item">
+          <h2 class="content__item-title" id="task">Решение</h2>
+          <p class="content__item-text">
+            1.1 Создана структура проекта. Внутри проекта создана папка blocks, для хранения блоков по методологии БЭМ.
+                Создана базовая HTML-структура по БЭМ.<br>
+            1.2 В HTML структуру добавлен блок "Галерея изображений" используя методологию БЭМ.<br><br>
+            2.1 Подключен CSS. Элементы стилизованы, используя современные подходы к CSS, такие как Flexbox или Grid<br>
+            2.2 Изменена стилизация навигации, теперь она располагается вертикально, засчет использования Flexbox и свойства flex-direction: column;
+            Для создания двухстолбцовой структуры контента использовался Grid.<br><br>
+            3.1 Создан репозиторий на GitHub, инициализирован локальный репозиторий и связан с удалённым.
+            Получена ссылка на GitHub для просмотре результата.<br>
+            3.2 Внесено изменение в проект, опубликовано, проверено, что изменения отобразились корректно.<br><br>
+            4.1 Страница открыта в нескольких браузерах и отображается корректно.
+            При разработке использовался DevTools для проверки адаптивности страницы на разных устройствах.<br>
+            4.2 Страница адаптируется под различные размеры экрана, ошибки в отображении исправлены.
+          </p>
+        </div>
+      </section>
+      <!-- Элемент блока основного контента - блок "картинок" -->
+      <section class="content__gallery">
+        <div class="content__item">
+          <h2 class="content__item-title" id="examples">Примеры</h2>
+        </div>
+        <div class="content__gallery-item">
+          <img src="img/1.png" />
+        </div>
+        <div class="content__gallery-item">
+          <img src="img/2.png" />
+        </div>
+        <div class="content__gallery-item">
+          <img src="img/3.png" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__text" id="contact">© 2024 training web-page Par64</p>
+    </footer>
+  </body>
+</html>
